@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f9;
+    background: linear-gradient(to right, #22dcfd, #87ff9b);
     line-height: 1.6;
 }
 
@@ -146,7 +146,7 @@ section {
 
 /* वीडियो सेक्शन */
 .video-section {
-    background-color: #fff;
+    background: linear-gradient(to right, #22dcfd, #87ff9b);
 }
 
 .video-grid {
@@ -305,4 +305,5 @@ footer p {
     .video-item, .playlist-card {
         max-width: 90%;
     }
+
 }
