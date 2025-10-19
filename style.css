@@ -201,7 +201,7 @@ section {
 
 /* प्लेलिस्ट सेक्शन */
 .playlist-section {
-    background-color: #green;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.836)), url('bhakti-background.jpg') no-repeat center center/cover; /* आपको अपनी भक्ति इमेज का नाम बदलना होगा */
 }
 
 .playlist-grid {
@@ -307,3 +307,4 @@ footer p {
     }
 
 }
+
