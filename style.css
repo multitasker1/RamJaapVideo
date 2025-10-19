@@ -1,0 +1,308 @@
+/* सामान्य स्टाइल और फॉन्ट */
+body {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+}
+
+.logo {
+            font-family: 'Times New Roman', serif;
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #c43333; /* गहरा लाल/भक्ति रंग */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* नेविगेशन बार (Navbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* हेडर को Flexbox का उपयोग करके responsive बनाएं */
+.main-header {
+    background-color: #333; /* हेडर का बैकग्राउंड कलर */
+    color: white;
+    padding: 10px 5%; /* ऊपर/नीचे 10px, दाएं/बाएं 5% पैडिंग */
+    display: flex; /* Flexbox ऑन करें */
+    justify-content: space-between; /* लोगो को बाएं और नेविगेशन को दाएं धकेलें */
+    align-items: center; /* वर्टिकली (vertically) बीच में रखें */
+    width: 100%;
+    /* position: fixed;  अगर आप चाहते हैं कि स्क्रॉल करने पर भी हेडर ऊपर ही रहे */
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* लोगो इमेज स्टाइलिंग */
+.logo-img {
+    height: 40px; /* लोगो की ऊंचाई सेट करें */
+    width: auto; /* चौड़ाई को आनुपातिक (proportional) रखें */
+    transition: transform 0.3s ease; /* आकर्षक होवर इफ़ेक्ट के लिए */
+}
+
+/* होवर इफ़ेक्ट: माउस ले जाने पर थोड़ा बड़ा करें */
+.logo-img:hover {
+    transform: scale(1.05);
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ff5722; /* हल्का नारंगी/भक्ति रंग */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    color: #a00000;
+    border-bottom: 2px solid #a00000;
+}
+
+/* हीरो सेक्शन (Hero Section) */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.836)), url('bhakti-background.jpg') no-repeat center center/cover; /* आपको अपनी भक्ति इमेज का नाम बदलना होगा */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.459);
+    padding-top: 60px; /* Navbar की ऊंचाई को समायोजित करें */
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff9800; /* सुनहरा पीला/आकर्षक */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e69341;
+}
+
+/* वीडियो सेक्शन */
+.video-section {
+    background-color: #fff;
+}
+
+.video-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.video-item {
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.video-item h3 {
+    margin: 15px 10px 5px;
+    font-size: 1.2em;
+}
+
+.video-item p {
+    margin: 0 10px 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* हमारे बारे में सेक्शन (About Section) */
+.about-section {
+    background-color: #e3f2fd; /* हल्का नीला/शांत रंग */
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+/* प्लेलिस्ट सेक्शन */
+.playlist-section {
+    background-color: #green;
+}
+
+.playlist-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(236, 232, 232, 0);
+}
+
+.playlist-card {
+    background:url("Vachanam\ dharmasya\ rakshanam.jpg"); /* हल्का नारंगी */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(34, 30, 30, 0);
+    width: 100%;
+    max-width: 50%;
+    text-align: left;
+    transition: transform 0.3s;
+    border-left: 5px solid #ff9800;
+}
+
+.playlist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.playlist-card h3 {
+    margin-top: 0;
+    color: #a00000;
+}
+
+/* हमसे जुड़ें सेक्शन (Contact Section) */
+.contact-section {
+    background-color: #f3e5f5; /* हल्का बैंगनी/आध्यात्मिक रंग */
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: opacity 0.3s;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.youtube { background-color: #ff0000; }
+.instagram { background-color: #c13584; }
+.facebook { background-color: #4267B2; }
+
+/* फ़ूटर */
+footer {
+    background-color: #a00000;
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* रेस्पॉन्सिव डिज़ाइन (Mobile Responsiveness) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        position: static;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .video-grid, .playlist-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .video-item, .playlist-card {
+        max-width: 90%;
+    }
+}
